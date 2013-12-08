@@ -16,11 +16,12 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<header></header>
+	<header id="header">
+		<div class="inner-header">
+			<div class="logo-unearte"><img src="<?php print get_template_directory_uri(); ?>/images/logo-unearte.png" alt="img1"></div>
+			<div class="logo-ciat"><img src="<?php print get_template_directory_uri(); ?>/images/logo-ciat.png" alt="img2"></div>
+		</div>
+	</header>
 
-	<div id="wrap">
-		<nav>
-			<?php wp_nav_menu(array('theme_location' => 'primary')); ?>
-		</nav>
-
-		<div id="content">
+	<section id="content">
+		<div class="inner-content">

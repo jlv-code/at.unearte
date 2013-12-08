@@ -1,7 +1,8 @@
-		</div><!-- Tag close DIV id=content -->
-	</div><!-- Tag close DIV id=wrap -->
-
-	<footer>
+		</div><!-- Tag close id=inner-content -->
+	</section><!-- Tag close id=content -->
+	
+	<footer id="footer">
+		<div class="inner-footer"></div>
 		
 	</footer>
 

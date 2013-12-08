@@ -7,7 +7,56 @@ Version: 1.0
 License: GNU General Public License
 */
 
+@import url(http://fonts.googleapis.com/css?family=Baumans);
+
 * {
 	margin: 0;
 	padding: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Baumans';
+	font-size: 1em;
+	background-color: #ddd;
+}
+
+header#header {
+	display: block;
+	width: 100%;
+	background-color: #fff;
+	border-bottom: 20px solid #931f30;
+}
+
+header#header .inner-header {
+	margin: 0 auto;
+	width: 1000px;
+}
+
+section#content {
+	display: block;
+	margin-top: 1px;
+	width: 100%;
+	background-color: #ddd;
+	border-top: 1px solid #931f30;
+}
+
+section#content .inner-content {
+	margin: 0 auto;
+	width: 1000px;
+	min-height: 300px;
+	background-color: #fff;
+}
+
+footer#footer {
+	display: block;
+	width: 100%;
+}
+
+footer#footer .inner-footer {
+	margin: 0 auto;
+	width: 1000px;
+	height: 100px;
+	background-color: #931f30;
 }
