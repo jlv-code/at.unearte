@@ -12,34 +12,51 @@ License: GNU General Public License
 * {
 	margin: 0;
 	padding: 0;
+	font-family: 'Baumans';
 }
 
 body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Baumans';
-	font-size: 1em;
+	font-size: 12px;
 	background-color: #ddd;
 }
+
+/* Estilos correspondientes a la cabecera del tema
+ */
 
 header#header {
 	display: block;
 	width: 100%;
 	background-color: #fff;
-	border-bottom: 20px solid #931f30;
+	border-bottom: 20px solid #AC192D;
 }
 
 header#header .inner-header {
 	margin: 0 auto;
 	width: 1000px;
+	height: 85px;
 }
+
+header#header .inner-header .logo-unearte {
+	display: inline-block;
+	width: 250px;
+}
+
+header#header .inner-header .logo-ciat {
+	display: inline-block;
+}
+
+/* Estilos correspondientes al cuerpo del tema
+ */
 
 section#content {
 	display: block;
 	margin-top: 1px;
 	width: 100%;
 	background-color: #ddd;
-	border-top: 1px solid #931f30;
+	border-top: 1px solid #AC192D;
 }
 
 section#content .inner-content {
@@ -48,6 +65,9 @@ section#content .inner-content {
 	min-height: 300px;
 	background-color: #fff;
 }
+
+/* Estilos correspondientes al pie de página del tema
+ */
 
 footer#footer {
 	display: block;
@@ -58,5 +78,57 @@ footer#footer .inner-footer {
 	margin: 0 auto;
 	width: 1000px;
 	height: 100px;
-	background-color: #931f30;
+	background-color: #AC192D;
+}
+
+footer#footer .inner-footer .condition {
+	margin-top: 35px;
+	margin-left: 20px;
+	float: left;
+	width: 225px;
+}
+
+footer#footer .inner-footer .condition  p {
+	display: inline-block;
+	color: #fff;
+}
+
+footer#footer .inner-footer .address {
+	margin-top: 35px;
+	margin-left: 190px;
+	float: left;
+	width: 260px;
+}
+
+footer#footer .inner-footer .address p {
+	display: inline-block;
+	color: #fff;
+	text-align: right;
+}
+
+footer#footer .inner-footer .copyright {
+	margin-top: 25px;
+	margin-left: 20px;
+	padding: 3px 0 3px 20px;
+	float: left;
+	width: 260px;
+	border-left: 1px solid #fff;
+}
+
+footer#footer .inner-footer .copyright p {
+	display: block;
+}
+
+footer#footer .inner-footer .copyright p.year {
+	color: #fff;
+	font-size: 16px;
+}
+
+footer#footer .inner-footer .copyright p.institution {
+	color: #fff;
+}
+
+footer#footer .inner-footer .copyright p.rights {
+	color: #aaa;
+	font-size: 11px;
 }
