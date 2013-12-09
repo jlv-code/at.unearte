@@ -17,7 +17,7 @@
 <body <?php body_class(); ?>>
 	<header id="header">
 		<div class="inner-header">
-			<div class="logo-unearte"><img src="<?php print get_template_directory_uri(); ?>/images/logo-unearte.png" alt="img1"></div>
+			<div class="logo-unearte"><a href="<?php print bloginfo('home'); ?>"><img src="<?php print get_template_directory_uri(); ?>/images/logo-unearte.png" alt="img1"></a></div>
 			<div class="logo-ciat"><img src="<?php print get_template_directory_uri(); ?>/images/logo-ciat.png" alt="img2"></div>
 		</div>
 	</header>

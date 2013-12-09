@@ -28,26 +28,43 @@ register_nav_menus(
 
 // Función que permite controlar la cantidad de palabras en el Excerpt
 function custom_excerpt_length($length) {
-	return 8;
+	return 90;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 // Función que permite cambiar "[...]" del excerpt por cualquier otra combinación de caracteres
 function new_excerpt_more($more) {
-	return '';
+	return ' ...';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
+
+function the_breadcrumb() {
+    echo '<span>» <a href="'.get_option('home').'">Inicio</a></span> ';
+    if (is_single()) {
+        echo "<span>» ";
+        the_title();
+        echo "</span> ";
+    } elseif (is_category() || is_single()) {
+    	echo "<span>» ";
+		the_category('title_li=');
+        echo "</span> ";
+    } elseif (is_page()) {
+    	echo "<span>» ";
+        echo the_title();
+        echo "</span> ";
+    }
+}
 
 // Función que permite generar secciónes para uso de widgets
 function atunearte_columns() {
 	register_sidebar(array(
-		'id' => 'sidebar-left',
-		'name' => 'Sidebar',
+		'id' => 'home-sidebar',
+		'name' => 'Home Sidebar',
 		'description' => 'Agregue aquí los widgets que desea mostrar en esta sección.',
-		'before_widget' => '<div id="widgets-sidebar">',
+		'before_widget' => '<div class="widgets-sidebar">',
 		'after_widget' => '</div>',
-		'before_title' => '',
-		'after_title' => '',
+		'before_title' => '<h2>',
+		'after_title' => '</h2>',
 		'empty_title'=> '',
 	));
 	
@@ -76,12 +93,12 @@ function atunearte_post_paging() {
 	if ($wp_query->max_num_pages < 2)	
 		return;
 	?>
-	<div class="category-nav">
+	<div class="entries-nav">
 	<?php if ( get_previous_posts_link() ) : ?>
-		<div class="nav-next"><?php previous_posts_link('&laquo; Anterior'); ?></div>
+		<div class="nav-previous"><?php previous_posts_link('Anterior'); ?></div>
 	<?php endif; ?>
 	<?php if ( get_next_posts_link() ) : ?>
-		<div class="nav-previous"><?php next_posts_link('Siguiente &raquo;'); ?></div>
+		<div class="nav-next"><?php next_posts_link('Siguiente'); ?></div>
 	<?php endif; ?>
 	</div>
 	<?php 
