@@ -52,6 +52,7 @@ header#header {
 }
 
 header#header .inner-header {
+	position: relative;
 	margin: 0 auto;
 	width: 1000px;
 	height: 85px;
@@ -64,6 +65,38 @@ header#header .inner-header .logo-unearte {
 
 header#header .inner-header .logo-ciat {
 	display: inline-block;
+}
+
+header#header .inner-header .search-form {
+	position: absolute;
+	top: 0;
+	display: inline-block;
+	margin-top: 20px;
+	margin-left: 40px;
+	padding: 10px;
+	width: auto;
+	background-color: #eee;
+	border: 1px solid #ddd;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+header#header .inner-header .search-form form {
+	display: block;
+}
+
+header#header .inner-header .search-form form .inner-form {
+	display: block;
+}
+
+header#header .inner-header .search-form form .inner-form input[type="text"]{
+	display: block;
+	padding: 5px;
+	border: 1px solid #ddd;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
 }
 
 /* Estilos correspondientes al cuerpo del tema
@@ -121,7 +154,6 @@ section#content .inner-content .entries {
 	width: 730px;
 	border-top: 1px solid #AC192D;
 }
-
 .entries .entry {
 	display: inline-block;
 	margin-top: 10px;
@@ -392,6 +424,45 @@ section#content .inner-content .single-entry {
 	display: inline-block;
 	padding: 2px 5px;
 	background-color: #babc6e;
+}
+
+/* Estilos correspondientes a la Busqueda
+ */
+
+section#content .inner-content .entries-search {
+	display: inline-block;
+	margin: 0;
+	padding-top: 10px;
+	width: 730px;
+	border-top: 1px solid #AC192D;
+}
+
+.entries-search .entry {
+	display: inline-block;
+	margin-bottom: 20px;
+	padding: 10px;
+	width: 710px;
+	background-color: #eee;
+	border-top: 10px solid #AC192D;
+}
+
+.entries-search .entry h1 {
+	display: inline-block;
+}
+
+.entries-search .entry h1 a {
+	color: #555;
+}
+
+.entries-search .entry h1 a:hover {
+	color: #000;
+}
+
+.entries-search .entry .readmore {
+	margin: 5px 0;
+	padding: 5px;
+	background-color: #ddd;
+	text-align: center;
 }
 
 /* Estilos correspondientes al Sidebar del Index.php
