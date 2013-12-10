@@ -19,7 +19,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Baumans';
-	font-size: 12px;
+	font-size: 14px;
 	background-color: #ddd;
 }
 
@@ -193,6 +193,8 @@ section#content .inner-content .entries {
 .entry .section-entry .thumbnail-entry img {
 	margin: 0;
 	padding: 0;
+	width: 150px;
+	height: 150px;
 }
 
 .entry .section-entry .data {

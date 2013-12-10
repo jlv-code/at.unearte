@@ -19,6 +19,14 @@
 		<div class="inner-header">
 			<div class="logo-unearte"><a href="<?php print bloginfo('home'); ?>"><img src="<?php print get_template_directory_uri(); ?>/images/logo-unearte.png" alt="img1"></a></div>
 			<div class="logo-ciat"><img src="<?php print get_template_directory_uri(); ?>/images/logo-ciat.png" alt="img2"></div>
+			<div class="search-form">
+				<form method="get" id="searchform" action="<?php bloginfo('home'); ?>/">
+					<div class="inner-form">
+						<input type="text" size="18" value="<?php echo wp_specialchars($s, 1); ?>" name="s" id="s" />
+						<input type="submit" id="searchsubmit" value="Buscar" class="btn" />
+					</div>
+				</form>
+			</div>
 		</div>
 	</header>
 

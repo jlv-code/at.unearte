@@ -10,7 +10,7 @@
 				</header>
 				<section class="section-entry">
 					<div class="categories-entry"><?php the_category(); ?></div>
-					<div class="thumbnail-entry"><?php the_post_thumbnail('thumbnail'); ?></div>
+					<div class="thumbnail-entry"><?php the_post_thumbnail('img-150x150'); ?></div>
 					<div class="data">
 						<div class="tags-entry"><?php the_tags('',' ',''); ?></div>
 						<div class="content-entry"><?php the_excerpt(); ?></div>

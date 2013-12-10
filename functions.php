@@ -1,9 +1,9 @@
 <?php
 
-define( 'ATUNEARTE_VERSION', 1.0 );
+define('ATUNEARTE_VERSION', 1.0);
 
 // Añade la posibilidad de RSS dentro del Sitio Web
-add_theme_support('automatic-feed-links' );
+add_theme_support('automatic-feed-links');
 
 // Añade funcionalidades de HTML5
 add_theme_support('html5', array( 'search-form', 'comment-form', 'comment-list' ));
@@ -12,11 +12,11 @@ add_theme_support('html5', array( 'search-form', 'comment-form', 'comment-list' 
 add_theme_support('post-formats', array('aside', 'audio', 'chat', 'gallery', 'image', 'link', 'quote', 'status', 'video'));
 
 // Añade la funcionalidad de Soporte de Thumbnails e Imagenes Destacadas
-add_theme_support('post-thumbnails' );
+add_theme_support('post-thumbnails');
 
 // Añade recortes de imágenes según las dimensiones que se le otorgen
 if (function_exists('add_image_size')) {
-	add_image_size('img-100x100', 158, 105, true);
+	add_image_size('img-150x150', 150, 150, true);
 }
 
 // Añade menús al tema para personalizar su ubicación
