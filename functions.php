@@ -17,6 +17,7 @@ add_theme_support('post-thumbnails');
 // Añade recortes de imágenes según las dimensiones que se le otorgen
 if (function_exists('add_image_size')) {
 	add_image_size('img-150x150', 150, 150, true);
+	add_image_size('img-250x250', 250, 250, true);
 }
 
 // Añade menús al tema para personalizar su ubicación

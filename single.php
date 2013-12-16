@@ -9,14 +9,16 @@
 					<h1><?php the_title(); ?></h1>
 				</header>
 				<section class="section-entry">
-						<?php the_post_thumbnail('medium'); ?>
+					<aside class="sidebar-entry">
+						<?php the_post_thumbnail('img-250x250'); ?>
+						<div class="categories-entry"><span>Categorías </span> <?php the_category(); ?></div>
+						<div class="tags-entry"><span>Etiquetas </span><?php the_tags('',' ',''); ?></div>
+					</aside>
+					<div class="content-entry">
 						<?php the_content(); ?>
-
+					</div>
 				</section>
-				<footer class="footer-entry">
-					<div class="categories-entry"><span>Categorías </span> <?php the_category(); ?></div>
-					<div class="tags-entry"><span>Etiquetas </span><?php the_tags('',' ',''); ?></div>
-				</footer>
+				<footer class="footer-entry"></footer>
 			</article>
 		<?php endwhile; endif; ?>
 		</div>
